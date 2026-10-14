@@ -1,0 +1,574 @@
+{
+  "svm": {
+    "model": "svm",
+    "n_samples": 600,
+    "accuracy": 0.9467,
+    "f1_macro": 0.9468,
+    "f1_weighted": 0.9468,
+    "precision_macro": 0.947,
+    "recall_macro": 0.9467,
+    "roc_auc_macro": 0.9892,
+    "inference_ms_per_sample": 0.024,
+    "per_class": {
+      "entertainment": {
+        "precision": 0.973,
+        "recall": 0.96,
+        "f1": 0.9664,
+        "support": 75
+      },
+      "finance": {
+        "precision": 0.9467,
+        "recall": 0.9467,
+        "f1": 0.9467,
+        "support": 75
+      },
+      "health": {
+        "precision": 0.9863,
+        "recall": 0.96,
+        "f1": 0.973,
+        "support": 75
+      },
+      "politics": {
+        "precision": 0.9333,
+        "recall": 0.9333,
+        "f1": 0.9333,
+        "support": 75
+      },
+      "science": {
+        "precision": 0.9211,
+        "recall": 0.9333,
+        "f1": 0.9272,
+        "support": 75
+      },
+      "sports": {
+        "precision": 0.9867,
+        "recall": 0.9867,
+        "f1": 0.9867,
+        "support": 75
+      },
+      "technology": {
+        "precision": 0.9091,
+        "recall": 0.9333,
+        "f1": 0.9211,
+        "support": 75
+      },
+      "world": {
+        "precision": 0.92,
+        "recall": 0.92,
+        "f1": 0.92,
+        "support": 75
+      }
+    },
+    "confusion_matrix": [
+      [
+        72,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      [
+        0,
+        71,
+        0,
+        2,
+        0,
+        0,
+        1,
+        1
+      ],
+      [
+        0,
+        0,
+        72,
+        0,
+        2,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        2,
+        0,
+        70,
+        0,
+        0,
+        0,
+        3
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        70,
+        0,
+        4,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        0,
+        74,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        3,
+        0,
+        70,
+        1
+      ],
+      [
+        1,
+        1,
+        0,
+        3,
+        1,
+        0,
+        0,
+        69
+      ]
+    ]
+  },
+  "logistic_regression": {
+    "model": "logistic_regression",
+    "n_samples": 600,
+    "accuracy": 0.9333,
+    "f1_macro": 0.9334,
+    "f1_weighted": 0.9334,
+    "precision_macro": 0.9335,
+    "recall_macro": 0.9333,
+    "roc_auc_macro": 0.9875,
+    "inference_ms_per_sample": 0.018,
+    "per_class": {
+      "entertainment": {
+        "precision": 0.9726,
+        "recall": 0.9467,
+        "f1": 0.9595,
+        "support": 75
+      },
+      "finance": {
+        "precision": 0.9333,
+        "recall": 0.9333,
+        "f1": 0.9333,
+        "support": 75
+      },
+      "health": {
+        "precision": 0.9595,
+        "recall": 0.9467,
+        "f1": 0.953,
+        "support": 75
+      },
+      "politics": {
+        "precision": 0.9079,
+        "recall": 0.92,
+        "f1": 0.9139,
+        "support": 75
+      },
+      "science": {
+        "precision": 0.92,
+        "recall": 0.92,
+        "f1": 0.92,
+        "support": 75
+      },
+      "sports": {
+        "precision": 0.9737,
+        "recall": 0.9867,
+        "f1": 0.9801,
+        "support": 75
+      },
+      "technology": {
+        "precision": 0.8947,
+        "recall": 0.9067,
+        "f1": 0.9007,
+        "support": 75
+      },
+      "world": {
+        "precision": 0.9067,
+        "recall": 0.9067,
+        "f1": 0.9067,
+        "support": 75
+      }
+    },
+    "confusion_matrix": [
+      [
+        71,
+        0,
+        0,
+        0,
+        0,
+        2,
+        1,
+        1
+      ],
+      [
+        0,
+        70,
+        0,
+        3,
+        0,
+        0,
+        1,
+        1
+      ],
+      [
+        0,
+        0,
+        71,
+        0,
+        2,
+        0,
+        2,
+        0
+      ],
+      [
+        0,
+        2,
+        0,
+        69,
+        0,
+        0,
+        0,
+        4
+      ],
+      [
+        0,
+        0,
+        2,
+        0,
+        69,
+        0,
+        4,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        0,
+        74,
+        0,
+        0
+      ],
+      [
+        0,
+        2,
+        1,
+        0,
+        3,
+        0,
+        68,
+        1
+      ],
+      [
+        1,
+        1,
+        0,
+        4,
+        1,
+        0,
+        0,
+        68
+      ]
+    ]
+  },
+  "naive_bayes": {
+    "model": "naive_bayes",
+    "n_samples": 600,
+    "accuracy": 0.9083,
+    "f1_macro": 0.9085,
+    "f1_weighted": 0.9085,
+    "precision_macro": 0.909,
+    "recall_macro": 0.9083,
+    "roc_auc_macro": 0.978,
+    "inference_ms_per_sample": 0.014,
+    "per_class": {
+      "entertainment": {
+        "precision": 0.9324,
+        "recall": 0.92,
+        "f1": 0.9262,
+        "support": 75
+      },
+      "finance": {
+        "precision": 0.8947,
+        "recall": 0.9067,
+        "f1": 0.9007,
+        "support": 75
+      },
+      "health": {
+        "precision": 0.9589,
+        "recall": 0.9333,
+        "f1": 0.9459,
+        "support": 75
+      },
+      "politics": {
+        "precision": 0.8933,
+        "recall": 0.8933,
+        "f1": 0.8933,
+        "support": 75
+      },
+      "science": {
+        "precision": 0.8933,
+        "recall": 0.8933,
+        "f1": 0.8933,
+        "support": 75
+      },
+      "sports": {
+        "precision": 0.9733,
+        "recall": 0.9733,
+        "f1": 0.9733,
+        "support": 75
+      },
+      "technology": {
+        "precision": 0.8354,
+        "recall": 0.88,
+        "f1": 0.8571,
+        "support": 75
+      },
+      "world": {
+        "precision": 0.8904,
+        "recall": 0.8667,
+        "f1": 0.8784,
+        "support": 75
+      }
+    },
+    "confusion_matrix": [
+      [
+        69,
+        1,
+        0,
+        0,
+        0,
+        2,
+        2,
+        1
+      ],
+      [
+        1,
+        68,
+        0,
+        3,
+        0,
+        0,
+        2,
+        1
+      ],
+      [
+        0,
+        0,
+        70,
+        0,
+        3,
+        0,
+        2,
+        0
+      ],
+      [
+        0,
+        3,
+        0,
+        67,
+        0,
+        0,
+        0,
+        5
+      ],
+      [
+        0,
+        0,
+        2,
+        0,
+        67,
+        0,
+        6,
+        0
+      ],
+      [
+        2,
+        0,
+        0,
+        0,
+        0,
+        73,
+        0,
+        0
+      ],
+      [
+        1,
+        2,
+        1,
+        0,
+        4,
+        0,
+        66,
+        1
+      ],
+      [
+        1,
+        2,
+        0,
+        5,
+        1,
+        0,
+        1,
+        65
+      ]
+    ]
+  },
+  "random_forest": {
+    "model": "random_forest",
+    "n_samples": 600,
+    "accuracy": 0.89,
+    "f1_macro": 0.8902,
+    "f1_weighted": 0.8902,
+    "precision_macro": 0.8908,
+    "recall_macro": 0.89,
+    "roc_auc_macro": 0.9715,
+    "inference_ms_per_sample": 0.038,
+    "per_class": {
+      "entertainment": {
+        "precision": 0.9189,
+        "recall": 0.9067,
+        "f1": 0.9128,
+        "support": 75
+      },
+      "finance": {
+        "precision": 0.88,
+        "recall": 0.88,
+        "f1": 0.88,
+        "support": 75
+      },
+      "health": {
+        "precision": 0.9452,
+        "recall": 0.92,
+        "f1": 0.9324,
+        "support": 75
+      },
+      "politics": {
+        "precision": 0.8667,
+        "recall": 0.8667,
+        "f1": 0.8667,
+        "support": 75
+      },
+      "science": {
+        "precision": 0.8784,
+        "recall": 0.8667,
+        "f1": 0.8725,
+        "support": 75
+      },
+      "sports": {
+        "precision": 0.9605,
+        "recall": 0.9733,
+        "f1": 0.9669,
+        "support": 75
+      },
+      "technology": {
+        "precision": 0.8,
+        "recall": 0.8533,
+        "f1": 0.8258,
+        "support": 75
+      },
+      "world": {
+        "precision": 0.8767,
+        "recall": 0.8533,
+        "f1": 0.8649,
+        "support": 75
+      }
+    },
+    "confusion_matrix": [
+      [
+        68,
+        1,
+        0,
+        0,
+        0,
+        3,
+        2,
+        1
+      ],
+      [
+        1,
+        66,
+        0,
+        4,
+        0,
+        0,
+        2,
+        2
+      ],
+      [
+        0,
+        0,
+        69,
+        0,
+        3,
+        0,
+        3,
+        0
+      ],
+      [
+        0,
+        4,
+        0,
+        65,
+        0,
+        0,
+        1,
+        5
+      ],
+      [
+        0,
+        0,
+        3,
+        0,
+        65,
+        0,
+        7,
+        0
+      ],
+      [
+        2,
+        0,
+        0,
+        0,
+        0,
+        73,
+        0,
+        0
+      ],
+      [
+        1,
+        2,
+        1,
+        1,
+        5,
+        0,
+        64,
+        1
+      ],
+      [
+        2,
+        2,
+        0,
+        5,
+        1,
+        0,
+        1,
+        64
+      ]
+    ]
+  }
+}

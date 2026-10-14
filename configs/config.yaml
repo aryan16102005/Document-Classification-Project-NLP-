@@ -1,0 +1,82 @@
+# NLP Document Classification System - Configuration
+
+data:
+  raw_dir: "data/raw"
+  processed_dir: "data/processed"
+  sample_dir: "data/sample"
+  train_split: 0.70
+  val_split: 0.15
+  test_split: 0.15
+  random_seed: 42
+  max_text_length: 512
+
+categories:
+  - technology
+  - sports
+  - politics
+  - entertainment
+  - science
+  - health
+  - finance
+  - world
+
+preprocessing:
+  lowercase: true
+  remove_punctuation: true
+  remove_stopwords: true
+  stemming: false
+  lemmatization: true
+  min_word_length: 2
+  max_features: 50000
+
+traditional_ml:
+  tfidf:
+    max_features: 50000
+    ngram_range: [1, 2]
+    sublinear_tf: true
+  models:
+    - name: "logistic_regression"
+      params:
+        max_iter: 1000
+        C: 1.0
+        solver: "lbfgs"
+        multi_class: "multinomial"
+    - name: "svm"
+      params:
+        C: 1.0
+        kernel: "linear"
+        probability: true
+    - name: "naive_bayes"
+      params:
+        alpha: 1.0
+    - name: "random_forest"
+      params:
+        n_estimators: 200
+        max_depth: 20
+        random_state: 42
+
+deep_learning:
+  model_name: "distilbert-base-uncased"
+  max_length: 256
+  batch_size: 16
+  learning_rate: 2.0e-5
+  num_epochs: 3
+  warmup_steps: 500
+  weight_decay: 0.01
+  save_steps: 500
+  eval_steps: 500
+
+training:
+  artifacts_dir: "artifacts"
+  logs_dir: "logs"
+  best_model_metric: "f1_macro"
+
+api:
+  host: "0.0.0.0"
+  port: 8000
+  workers: 1
+  reload: false
+
+ui:
+  port: 8501
+  theme: "dark"

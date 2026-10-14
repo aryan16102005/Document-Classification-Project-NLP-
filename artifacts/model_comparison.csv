@@ -1,0 +1,5 @@
+model,accuracy,f1_macro,f1_weighted,precision_macro,recall_macro,roc_auc_macro,inference_ms_per_sample
+svm,0.9467,0.9468,0.9468,0.947,0.9467,0.9892,0.024
+logistic_regression,0.9333,0.9334,0.9334,0.9335,0.9333,0.9875,0.018
+naive_bayes,0.9083,0.9085,0.9085,0.909,0.9083,0.978,0.014
+random_forest,0.89,0.8902,0.8902,0.8908,0.89,0.9715,0.038
